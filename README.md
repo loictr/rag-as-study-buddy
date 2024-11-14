@@ -32,7 +32,7 @@ It should not rely on any existing real or fictional content. If it does by acci
 
 The study buddy demo consider the database already exists.
 
-See `notebook.ipynb` for explanations about database and questions generation. Implementation for new knowledge content may be added later.
+See `notebook Database and Questions.ipynb` for explanations about database and questions generation. Implementation for new knowledge content may be added later.
 
 The questions are already generated in the `questions` directory but can be re-generated.
 

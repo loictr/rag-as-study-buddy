@@ -3,9 +3,10 @@ from gradio import ChatMessage
 import json
 import random
 from evaluator import Evaluator
+from common import QUESTIONS_PATH
 
 questions_all = []
-with open('questions/questions.json', 'r') as f:
+with open(QUESTIONS_PATH, 'r') as f:
     questions_all = json.load(f)
 
 def get_question():

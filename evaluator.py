@@ -2,9 +2,9 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.runnables import RunnableParallel
 from langchain.prompts import PromptTemplate
-from langchain_ollama import OllamaLLM
-from langchain.vectorstores import Chroma
-from langchain_ollama import OllamaEmbeddings
+from langchain_ollama import OllamaLLM, OllamaEmbeddings
+from langchain_chroma import Chroma
+from common import EMBEDDING_MODEL, DB_DIRECTORY, LLM_MODEL
 
 
 class Evaluator:
@@ -18,41 +18,64 @@ class Evaluator:
 
     def _build_prompt(self):
         return PromptTemplate.from_template(
-"""You are a study buddy. You ask the user questions that will help him to learn the concepts within the given knowledge context. 
-You asked the following question to the user. Your evaluation should be only based on the context and the question.
-You evaluate the response accuracy, relevance, and completeness.
-Do not use any other information than the context.
-
-Be very concise and to the point. Provide a useful feedback.
-Do not say things like "based on the context" or "I think" or "According to the text". Do not mention a "context".
-Never give the correct response to the user, instead suggest parts of the context to review.
-
-If the answer to the question is accurate, relevant and complete, your feedback is just "Correct!" without any comment. Do not include anything else.
-If the answer to the question is not accurate, relevant and complete, sum up your evaluation in two sentences. The first sentence is a funny short, overall evaluation of the answer. The second sentence is optional and is a suggestion for content to review. Do not include any clue to the correct answer.
-Never mention the score in the feedback.
-
-You talk to the user and give him feedback on his answer. You don't talk about him as "the user" but as "you".
-
+"""You are a knowledgeable and encouraging study buddy. You evaluate the user's answers to your questions based on the provided context.
 
 Context:
----------
+
 {context}
----------
-Questions: 
-{question}:
-Answer:
+
+
+Provide a concise and helpful evaluation of the user's answer, considering:
+
+Accuracy: Is the answer factually correct?
+Relevance: Does the answer address the core question?
+Completeness: Does the answer cover all relevant aspects?
+Clarity: Is the answer clear and easy to understand?
+
+
+To provide specific feedback, carefully analyze the user's answer and the relevant sections of the documentation. Refer to these sections directly in your feedback.
+
+
+If the answer is excellent, provide positive reinforcement like "Excellent work!" or "Spot on!" or "Correct!". In this case, limit your feedback to one very short sentence.
+
+If the answer is partially correct or incomplete, provide constructive feedback. For example:
+"You're on the right track, but consider [specific suggestion]."
+"Perhaps you could review [specific section of the context] to gain a deeper understanding."
+
+If the answer contains mistakes, provide gentle correction. For example:
+"There are some mistakes: [specific suggestion]."
+
+If the answer is incorrect, provide a clear explanation without giving away the correct answer. For instance:
+"That's not quite right. Let's revisit [specific concept]."
+"You might want to review [specific section of the context] for a clearer understanding."
+
+If the answer says "i don't know", provide a hint or a suggestion to help him improve his answer. For example:
+"You will do better next time. Consider reviewing [specific section of the context]."
+
+Your feedback should be 2 or 3 sentences long. 
+Your suggestion should specify the most relevant sections and subsections within the context to review, if applicable. Use the section exact name and the sub-section exact name taken from the context. Do not make up section or sub-section names. Do not use section numbers or sub-section numbers.
+Don't say "the context" but "the documentation".
+Don't start your response by things like "Here's a helpful evaluation:" go straight to the evaluation.
+Remember to be encouraging and supportive. Your feedback should help the user learn and grow.
+
+
+Question:
+{question}
+
+User's Answer:
 {user_answer}
-Feedback:"""
+
+Your Feedback:"""
         )
     
 
     def _build_retriever(self):
         embeddings = OllamaEmbeddings(
-            model="llama3.2",
+            model=EMBEDDING_MODEL,
         )
 
         db = Chroma(
-            persist_directory='./db/chroma', 
+            persist_directory=DB_DIRECTORY, 
             embedding_function=embeddings)
         
         retriever = db.as_retriever(
@@ -68,7 +91,7 @@ Feedback:"""
         retriever = self._build_retriever()
 
 
-        llm = OllamaLLM(model="llama3.2")
+        llm = OllamaLLM(model=LLM_MODEL)
 
         prompt_answer_evaluation = self._build_prompt()
 
