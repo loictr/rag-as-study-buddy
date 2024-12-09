@@ -1,19 +1,14 @@
 import gradio as gr
 from gradio import ChatMessage
-import json
-import random
 from evaluator import Evaluator
-from common import QUESTIONS_PATH
+from questions_repository import QuestionsRepository
+#from questions_repository_for_demo import QuestionsRepository
 
-questions_all = []
-with open(QUESTIONS_PATH, 'r') as f:
-    questions_all = json.load(f)
 
-def get_question():
-    return random.choice(questions_all)
+repository = QuestionsRepository()
 
 def on_load(messages, output):
-    question = get_question()
+    question = repository.get_question()
     messages.append({"role": "assistant", "content": question})
     return messages
 
@@ -24,7 +19,7 @@ chain = Evaluator()
 def submit_answer(answer, history):
     latest_assistant_message = next((item for item in reversed(history) if item["role"] == "assistant"), None)
     result = chain.evaluate_answer(latest_assistant_message["content"], answer)
-    new_question = get_question()
+    new_question = repository.get_question()
 
     # add the user answer
     history.append(
