@@ -20,13 +20,13 @@ LANGCHAIN_PROJECT="rag-as-study-buddy"
 
 ## Knowledge generation and disclaimer
 
-This demo uses an imaginary animal species called Zephryn as knowledge database to emulate a private or evolving knowledge base, not covered by base models.
+This demo uses an imaginary animal species called Zekryn as knowledge database to emulate a private or evolving knowledge base, not covered by base models.
 
 I generated some knowledge on the imaginary species and its subspecies, including the naming, using Gemini. It is stored as markdown files. 
 
 ### Disclaimer
 
-It should not rely on any existing real or fictional content. If it does by accident, do not check the accuracy of this files upon the original content, that was really random. I later realized Zephryn could be used as a first name. See no relation.
+It should not rely on any existing real or fictional content. If it does by accident, do not check the accuracy of this files upon the original content, that was really random.
 
 ## Database and question generation
 

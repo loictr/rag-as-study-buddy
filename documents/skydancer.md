@@ -1,6 +1,6 @@
 # Skydancers
 
-The Skydancers are a subspecies of the Zephryn, a highly intelligent avian species native to the planet Aerion. Renowned for their aerial acrobatics and mesmerizing flight patterns, Skydancers are one of the most beloved and studied species in the galaxy.
+The Skydancers are a subspecies of the Zekryn, a highly intelligent avian species native to the planet Aerion. Renowned for their aerial acrobatics and mesmerizing flight patterns, Skydancers are one of the most beloved and studied species in the galaxy.
 
 ## Physical Characteristics
 

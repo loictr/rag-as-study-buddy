@@ -1,12 +1,24 @@
 # Windriders
 
-Windriders are a swift and agile subspecies of the Zephryn, known for their incredible speed and aerial prowess. These dynamic creatures are often found soaring through the skies, their powerful wings carrying them effortlessly across vast distances.
+Windriders are a swift and agile subspecies of the Zekryn, known for their incredible speed and aerial prowess. These dynamic creatures are often found soaring through the skies, their powerful wings carrying them effortlessly across vast distances.
 
 ## Physical Characteristics
 
 Windriders possess a sleek and streamlined body, perfectly adapted for high-speed flight. Their wings are long and powerful, enabling them to reach incredible speeds. Their feathers are often smooth and glossy, reducing air resistance.
 
 A unique feature of Windriders is their ability to control the wind. They can manipulate air currents to their advantage, allowing them to soar effortlessly and perform breathtaking aerial maneuvers. This ability makes them highly skilled hunters, capable of capturing prey on the wing.
+
+## Aerodynamic Specifications
+Windriders possess uniquely shaped primary feathers measuring exactly 47.3 centimeters in length, with microscopic serrations spaced 0.02 millimeters apart along their leading edges. These adaptations reduce air resistance by 73% compared to other Zekryn subspecies. Their hollow bones contain a complex network of air sacs that maintain an internal pressure of 0.8 atmospheres, enabling sustained flight at altitudes of up to 12,000 meters.
+
+## Wind Manipulation Mechanics
+Their wind control stems from specialized organs called aeroceptors, located beneath their wing membranes. Each Windrider possesses exactly 1,247 aeroceptors per wing, capable of detecting air pressure changes as minute as 0.001 pascals. Through precise muscular contractions, they can generate localized pressure differentials of up to 15 kilopascals, effectively creating their own thermal updrafts.
+
+## Flight Metrics
+A typical Windrider can achieve burst speeds of 342 kilometers per hour for up to 17 minutes, with a cruising velocity of 198 kilometers per hour maintained for 9.5 hours. Their turning radius at maximum speed is an impressive 3.2 meters, achieved through a banking angle of 78.5 degrees. During aerial duels, they regularly sustain G-forces of up to 12G without physiological stress.
+
+## Metabolic Adaptations
+Their unique digestive system processes prey with 94% efficiency, converting captured energy directly into specialized flight muscles. A single hunting session, lasting approximately 2.3 hours, yields enough energy for 31 hours of sustained flight. Their metabolic rate increases by 823% during high-speed pursuits, supported by a remarkable oxygen absorption rate of 187 milliliters per kilogram per minute.
 
 ## Social Structure
 

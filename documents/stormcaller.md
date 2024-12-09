@@ -1,16 +1,28 @@
 # Stormcallers
 
-The Stormcallers are a formidable subspecies of the Zephryn, known for their mastery over the elements, particularly wind and lightning. These majestic creatures are often found soaring through tempestuous skies, their powerful wings cutting through the storm clouds.
+The Stormcallers are a formidable subspecies of the Zekryn, known for their mastery over the elements, particularly wind and lightning. These majestic creatures are often found soaring through tempestuous skies, their powerful wings cutting through the storm clouds.
 
-Physical Characteristics
+## Physical Characteristics
 
-Stormcallers possess a robust build, with strong, muscular wings and sharp, hooked beaks. Their feathers are typically dark and mottled, blending seamlessly into stormy skies. They are larger than many other Zephryn subspecies, with a wingspan that can exceed ten meters.
+Stormcallers possess a robust build, with strong, muscular wings and sharp, hooked beaks. Their feathers are typically dark and mottled, blending seamlessly into stormy skies. They are larger than many other Zekryn subspecies, with a wingspan that can exceed ten meters.
 
 A unique feature of Stormcallers is their ability to generate and manipulate electricity. Specialized cells in their bodies produce electrical charges, which can be discharged in powerful bolts of lightning. This ability, combined with their mastery of the wind, makes them formidable predators and fierce defenders of their territory.
 
+## Electrical Generation System
+The Stormcaller's electrical organs contain specialized ionocytes arranged in hexagonal chambers measuring exactly 0.47 millimeters across. Each chamber generates a potential difference of 1,200 volts, with precise control down to 0.1-volt increments. Their lightning strikes can reach temperatures of 27,700 degrees Celsius, five times hotter than the surface of the sun, and can be sustained for up to 3.7 seconds.
+
+## Weather Manipulation Mechanics
+Through a complex network of barometric sensing organs located beneath their primary flight feathers, Stormcallers can detect atmospheric pressure changes as minute as 0.02 millibars. They manipulate storm systems by creating localized pressure differentials of up to 85 millibars, sufficient to generate cumulonimbus clouds reaching heights of 14.3 kilometers within 27 minutes.
+
+## Physiological Adaptations
+Their nervous system includes unique myelin sheaths composed of electromagnetically resistant proteins that can withstand current densities of up to 4,200 amperes per square meter. Their feathers contain trace amounts of magnetite crystals spaced precisely 0.83 micrometers apart, allowing them to detect Earth's magnetic field with 99.97% accuracy.
+
+## Metabolic Specifications
+During lightning generation, their core body temperature can spike to 47.2 degrees Celsius for brief periods, regulated by specialized heat-dissipating scales beneath their feathers. Their hearts beat at 342 beats per minute during peak electrical discharge, pumping oxygenated blood through reinforced vessels that can withstand electromagnetic pulses of up to 15 kilovolts per meter.
+
 ## Social Structure
 
-Unlike many other Zephryn subspecies, Stormcallers are solitary creatures. They prefer to live alone, often high in the mountains or on remote islands, where they can commune with the raw power of nature. However, during breeding season, Stormcallers may form temporary pairs to raise their young.
+Unlike many other Zekryn subspecies, Stormcallers are solitary creatures. They prefer to live alone, often high in the mountains or on remote islands, where they can commune with the raw power of nature. However, during breeding season, Stormcallers may form temporary pairs to raise their young.
 
 Despite their solitary nature, Stormcallers are highly territorial. They will fiercely defend their territory from intruders, using their powerful claws and lightning strikes to deter predators and rivals.
 

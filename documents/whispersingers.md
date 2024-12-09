@@ -1,12 +1,24 @@
 # Whispersingers
 
-The Whispersingers are a gentle and ethereal subspecies of the Zephryn, renowned for their enchanting songs and their connection to the natural world. These delicate creatures are often found in serene forests and tranquil meadows, where they spend their days singing and communing with nature.
+The Whispersingers are a gentle and ethereal subspecies of the Zekryn, renowned for their enchanting songs and their connection to the natural world. These delicate creatures are often found in serene forests and tranquil meadows, where they spend their days singing and communing with nature.
 
-Physical Characteristics
+## Physical Characteristics
 
 Whispersingers are characterized by their small, delicate bodies and soft, downy feathers. Their wings are often translucent, giving them an almost spectral appearance. Their eyes are large and expressive, reflecting the depth of their emotions.
 
 A unique feature of Whispersingers is their ability to manipulate sound. They can produce a wide range of sounds, from soothing lullabies to powerful battle cries. Their songs are said to have a calming effect on both humans and animals, and they are often used to soothe the sick and troubled.
+
+## Sonic Generation System
+The Whispersingers' specialized syrinx contains precisely 847 micro-resonance chambers, each measuring 0.12 millimeters in diameter. These chambers can produce frequencies ranging from 0.5 Hz to 78 kHz, well beyond human hearing range. Their unique vocal membranes are composed of crystalline fibers spaced exactly 0.003 millimeters apart, allowing for quantum harmonic resonance with a 99.98% accuracy rate.
+
+## Sound Manipulation Mechanics
+Through specialized organocrystalline structures in their auditory cortex, Whispersingers can process and manipulate sound waves with unprecedented precision. Each individual can simultaneously control up to 14 independent sound frequencies, creating complex harmonic patterns that interact with matter at the molecular level. Their songs can alter molecular vibration patterns within a radius of 47 meters, achieving effects from cellular regeneration to crystalline restructuring.
+
+## Neural Harmonics
+The Whispersinger brain contains a unique neural network of sonic receptors arranged in a dodecahedral pattern. Each receptor cluster processes acoustic information at 7.23 terabits per second, allowing them to analyze and reproduce any sound with perfect fidelity. Their memory crystals can store up to 12.7 petabytes of sonic information, equivalent to 3.2 million hours of complex harmonics.
+
+## Metabolic Resonance
+During song generation, their cellular metabolism synchronizes to a base frequency of 432 Hz, known as the universal frequency of healing. Their specialized lung system can maintain continuous sound production for up to 7.4 hours, utilizing a unique gas exchange system that achieves 99.3% efficiency. Core body temperature during complex sonic manipulation maintains a precise 41.7 degrees Celsius.
 
 ## Social Structure
 
