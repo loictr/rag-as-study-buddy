@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1000",
+        "rag_question": "How many aeroceptors does each Windrider possess per wing?",
+        "context_reference": ["Section: Windriders\nSub-section: Wind Manipulation Mechanics\nTheir wind control stems from specialized organs called aeroceptors, located beneath their wing membranes. Each Windrider possesses exactly 1,247 aeroceptors per wing, capable of detecting air pressure changes as minute as 0.001 pascals. Through precise muscular contractions, they can generate localized pressure differentials of up to 15 kilopascals, effectively creating their own thermal updrafts."],
+        "cases":[
+            {
+                "id":"1000",
+                "user_answer": "1247",
+                "rag_feedback_reference": "Excellent!"
+            },
+            {
+                "id":"2000",
+                "user_answer": "1245",
+                "rag_feedback_reference": "Your're close! The correct answer is 1247. You should review Windriders > Wind Manipulation Mechanics."
+            },
+            {
+                "id":"3000",
+                "user_answer": "124",
+                "rag_feedback_reference": "Wrong answer. You should review Windriders > Wind Manipulation Mechanics."
+            }
+        ]
+    },
+    {
+        "id": "2000",
+        "rag_question": "Where are Windriders most often found, and why?",
+        "context_reference": ["They are particularly fond of areas with strong winds, as these provide them with ideal conditions for flight."],
+        "cases": [
+            {
+                "id":"1000",
+                "user_answer": "In areas with strong winds, for ideal conditions for flight.",
+                "rag_feedback_reference": "Excellent!"
+            },
+            {
+                "id":"2000",
+                "user_answer": "In areas with strong winds.",
+                "rag_feedback_reference": "You're right but your answer is incomplete. You should review Windriders > Diet and Habitat."
+            },
+            {
+                "id":"3000",
+                "user_answer": "In my bedroom.",
+                "rag_feedback_reference": "Wrong answer. You should review Windriders > Diet and Habitat."
+            }
+        ]
+    }
+]

@@ -1,8 +1,8 @@
 import gradio as gr
 from gradio import ChatMessage
-from evaluator import Evaluator
-from questions_repository import QuestionsRepository
-#from questions_repository_for_demo import QuestionsRepository
+from answer_analyst import AnswerAnalyst
+#from questions_repository import QuestionsRepository
+from questions_repository_for_demo import QuestionsRepository
 
 
 repository = QuestionsRepository()
@@ -13,7 +13,7 @@ def on_load(messages, output):
     return messages
 
 
-chain = Evaluator()
+chain = AnswerAnalyst()
 
 # TODO : get the answer from langchain
 def submit_answer(answer, history):

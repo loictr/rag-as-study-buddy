@@ -7,7 +7,7 @@ from langchain_chroma import Chroma
 from common import EMBEDDING_MODEL, DB_DIRECTORY, LLM_MODEL
 
 
-class Evaluator:
+class AnswerAnalyst:
 
     _chain = None
     _prompt_template: str = None
@@ -72,6 +72,11 @@ class Evaluator:
             doc.page_content for doc in docs
         )
 
-    def evaluate_answer(self, question, user_answer):
+    def evaluate_answer_full_ouput(self, question, user_answer):
         evaluation_output = self._chain.invoke({"question": question, "user_answer": user_answer})
+        return evaluation_output
+
+    def evaluate_answer(self, question, user_answer) -> str:
+        evaluation_output = self.evaluate_answer_full_ouput(self, question, user_answer)
         return evaluation_output['answer']
+
