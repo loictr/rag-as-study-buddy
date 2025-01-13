@@ -165,3 +165,5 @@ cython_debug/
 #.idea/
 
 
+rag_evaluation_langsmith_results.json
+rag_evaluation_ragas_results.json

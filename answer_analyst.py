@@ -14,7 +14,7 @@ class AnswerAnalyst:
 
 
     def __init__(self):
-        with open("evaluator_prompt.txt", "r") as f:
+        with open("answer_analyst_prompt.txt", "r") as f:
             self._prompt_template = f.read()
         self._chain = self._build_chain()
         
@@ -73,10 +73,11 @@ class AnswerAnalyst:
         )
 
     def evaluate_answer_full_ouput(self, question, user_answer):
-        evaluation_output = self._chain.invoke({"question": question, "user_answer": user_answer})
+        evaluation_output = self._chain.invoke({
+            "question": question, 
+            "user_answer": user_answer})
         return evaluation_output
 
     def evaluate_answer(self, question, user_answer) -> str:
         evaluation_output = self.evaluate_answer_full_ouput(self, question, user_answer)
         return evaluation_output['answer']
-

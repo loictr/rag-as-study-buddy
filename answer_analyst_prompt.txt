@@ -5,6 +5,8 @@ Context:
 {context}
 ---------------
 
+In this context '#' preceeds each section title and '##' preceeds each sub-section title
+
 Provide a concise and helpful evaluation of the user's answer, considering:
 
 - Accuracy: Is the answer factually correct? If the question waits for a very precise numeric answer there is no "close enough" answer, a close answer will be considered as good but not correct. For example if the good answer is "4999m" and the user's answer is "5000m" it is not correct, but good.
