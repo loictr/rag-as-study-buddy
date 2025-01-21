@@ -1,10 +1,9 @@
 import gradio as gr
 from gradio import ChatMessage
-from answer_analyst import AnswerAnalyst
-#from questions_repository import QuestionsRepository
+from  analyst.answer_analyst_stepped import AnswerAnalystStepped
 from questions_repository_for_demo import QuestionsRepository
 
-
+analyst = AnswerAnalystStepped()
 repository = QuestionsRepository()
 
 def on_load(messages, output):
@@ -13,12 +12,11 @@ def on_load(messages, output):
     return messages
 
 
-chain = AnswerAnalyst()
 
 # TODO : get the answer from langchain
 def submit_answer(answer, history):
     latest_assistant_message = next((item for item in reversed(history) if item["role"] == "assistant"), None)
-    result = chain.evaluate_answer(latest_assistant_message["content"], answer)
+    result = analyst.evaluate_answer(latest_assistant_message["content"], answer)
     new_question = repository.get_question()
 
     # add the user answer

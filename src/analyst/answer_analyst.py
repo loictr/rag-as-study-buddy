@@ -4,7 +4,7 @@ from langchain_core.runnables import RunnableParallel
 from langchain.prompts import PromptTemplate
 from langchain_ollama import OllamaLLM, OllamaEmbeddings
 from langchain_chroma import Chroma
-from common import EMBEDDING_MODEL, DB_DIRECTORY, LLM_MODEL
+from src.common import EMBEDDING_MODEL, DB_DIRECTORY, LLM_MODEL
 
 
 class AnswerAnalyst:

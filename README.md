@@ -6,6 +6,16 @@ The goal is:
 2. Generate questions for the user
 3. Evaluate user's answers to each question and provide feedback
 
+
+## RAG evaluation
+
+To run the evaluation:
+```shell
+rag-as-study-buddy> python -m evaluation.rag_evaluation_ragas_stepped_notation_run
+```
+
+The src `__init__.py` file adds the `src` directory to the paths
+
 ## Requirements
 
 This demo needs a running Ollama instance with a pulled llama3.2 model.

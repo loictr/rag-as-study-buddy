@@ -1,6 +1,6 @@
 import json
 import random
-from common import QUESTIONS_PATH
+from src.common import QUESTIONS_PATH
 
 class QuestionsRepository:
 

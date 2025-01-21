@@ -1,0 +1,215 @@
+{
+    "batches": [
+        {
+            "id": "10",
+            "questions": [
+                {
+                    "id": "1000",
+                    "rag_question": "How many aeroceptors does each Windrider possess per wing?",
+                    "context_reference": ["Section: Windriders\nSub-section: Wind Manipulation Mechanics\nTheir wind control stems from specialized organs called aeroceptors, located beneath their wing membranes. Each Windrider possesses exactly 1,247 aeroceptors per wing, capable of detecting air pressure changes as minute as 0.001 pascals. Through precise muscular contractions, they can generate localized pressure differentials of up to 15 kilopascals, effectively creating their own thermal updrafts."],
+                    "cases":[
+                        {
+                            "id":"1000",
+                            "user_answer": "1247",
+                            "rag_feedback_reference": "Excellent!",
+                            "accuracy_reference": 1.0,
+                            "completeness_reference": 1.0,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": []
+                        },
+                        {
+                            "id":"2000",
+                            "user_answer": "1245",
+                            "rag_feedback_reference": "Your're close! The correct answer is 1247. You should review Windriders > Wind Manipulation Mechanics.",
+                            "accuracy_reference": 0.7,
+                            "completeness_reference": 1.0,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Windriders - Wind Manipulation Mechanics"]
+                        },
+                        {
+                            "id":"3000",
+                            "user_answer": "124",
+                            "rag_feedback_reference": "Wrong answer. The correct answer is: 1247. You should review Windriders > Wind Manipulation Mechanics.",
+                            "accuracy_reference": 0,
+                            "completeness_reference": 1.0,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Windriders - Wind Manipulation Mechanics"]
+                        },
+                        {
+                            "id":"4000",
+                            "user_answer": "blue",
+                            "rag_feedback_reference": "You're off topic. The correct answer is: 1247. You should review Windriders > Wind Manipulation Mechanics.",
+                            "accuracy_reference": 0.0,
+                            "completeness_reference": 1.0,
+                            "relevance_reference": 0.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Windriders - Wind Manipulation Mechanics"]
+                        },
+                        {
+                            "id":"5000",
+                            "user_answer": "a lot",
+                            "rag_feedback_reference": "I expected an exact number. Your answer is not precise enough. The correct answer is: 1247. You should review Windriders > Wind Manipulation Mechanics.",
+                            "accuracy_reference": 0.1,
+                            "completeness_reference": 0.1,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Windriders - Wind Manipulation Mechanics"]
+                        }
+                    ]
+                },
+                {
+                    "id": "2000",
+                    "rag_question": "How many eggs do female Skydancers typically lay per clutch?",
+                    "context_reference": [ "Sections: Skydancers\nSub-section: Reproduction and Lifespan\nSkydancers reach sexual maturity at around two years of age. Mating rituals are elaborate and often involve complex aerial displays. Females lay a clutch of two to four eggs, which they incubate for several weeks." ],
+                    "cases":[
+                        {
+                            "id":"1000",
+                            "user_answer": "2 to 4",
+                            "rag_feedback_reference": "Excellent!",
+                            "accuracy_reference": 1.0,
+                            "completeness_reference": 1.0,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": []
+                        },
+                        {
+                            "id":"2000",
+                            "user_answer": "2",
+                            "rag_feedback_reference": "You're close! The correct answer is 2 to 4. You should review Skydancers > Reproduction and Lifespan.",
+                            "accuracy_reference": 0.8,
+                            "completeness_reference": 0.3,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Skydancers - Reproduction and Lifespan"]
+                        },
+                        {
+                            "id":"3000",
+                            "user_answer": "4",
+                            "rag_feedback_reference": "You're close! The correct answer is 2 to 4. You should review Skydancers > Reproduction and Lifespan.",
+                            "accuracy_reference": 0.8,
+                            "completeness_reference": 0.3,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Skydancers - Reproduction and Lifespan"]
+                        },
+                        {
+                            "id":"4000",
+                            "user_answer": "blue",
+                            "rag_feedback_reference": "You're off topic. The correct answer is: 2 to 4. You should review Skydancers > Reproduction and Lifespan.",
+                            "accuracy_reference": 0.0,
+                            "completeness_reference": 0.0,
+                            "relevance_reference": 0.0,
+                            "clarity_reference": 0.0,
+                            "sections_reference": ["Skydancers - Reproduction and Lifespan"]
+                        },
+                        {
+                            "id":"5000",
+                            "user_answer": "a lot",
+                            "rag_feedback_reference": "I expected a range. Your answer is not precise enough. The correct answer is: 2 to 4. You should review Skydancers > Reproduction and Lifespan.",
+                            "accuracy_reference": 0.0,
+                            "completeness_reference": 0.0,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Skydancers - Reproduction and Lifespan"]
+                        },
+                        {
+                            "id":"6000",
+                            "user_answer": "2 to 5",
+                            "rag_feedback_reference": "You're close! The correct answer is 2 to 4. You should review Skydancers > Reproduction and Lifespan.",
+                            "accuracy_reference": 0.8,
+                            "completeness_reference": 1.0,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Skydancers - Reproduction and Lifespan"]
+                        },
+                        {
+                            "id":"7000",
+                            "user_answer": "3",
+                            "rag_feedback_reference": "You're close! The correct answer is 2 to 4. You should review Skydancers > Reproduction and Lifespan.",
+                            "accuracy_reference": 0.8,
+                            "completeness_reference": 0.3,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Skydancers - Reproduction and Lifespan"]
+                        },
+                        {
+                            "id":"8000",
+                            "user_answer": "7",
+                            "rag_feedback_reference": "Wrong! The correct answer is 2 to 4. You should review Skydancers > Reproduction and Lifespan.",
+                            "accuracy_reference": 0.1,
+                            "completeness_reference": 0.3,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Skydancers - Reproduction and Lifespan"]
+                        },
+                        {
+                            "id":"9000",
+                            "user_answer": "57",
+                            "rag_feedback_reference": "Wrong answer! The correct answer is 2 to 4. You should review Skydancers > Reproduction and Lifespan.",
+                            "accuracy_reference": 0.0,
+                            "completeness_reference": 0.1,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Skydancers - Reproduction and Lifespan"]
+                        },
+                        {
+                            "id":"10000",
+                            "user_answer": "57 to 85",
+                            "rag_feedback_reference": "Wrong answer! The correct answer is 2 to 4. You should review Skydancers > Reproduction and Lifespan.",
+                            "accuracy_reference": 0.0,
+                            "completeness_reference": 1.0,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Skydancers - Reproduction and Lifespan"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "questions": [
+                {
+                    "id": "2000",
+                    "rag_question": "Where are Windriders most often found, and why?",
+                    "context_reference": ["They are particularly fond of areas with strong winds, as these provide them with ideal conditions for flight."],
+                    "cases": [
+                        {
+                            "id":"1000",
+                            "user_answer": "In areas with strong winds, for ideal conditions for flight.",
+                            "rag_feedback_reference": "Excellent!",
+                            "accuracy_reference": 1.0,
+                            "completeness_reference": 1.0,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": []
+                        },
+                        {
+                            "id":"2000",
+                            "user_answer": "In areas with strong winds.",
+                            "rag_feedback_reference": "You're right but your answer is incomplete. You should review Windriders > Diet and Habitat.",
+                            "accuracy_reference": 1.0,
+                            "completeness_reference": 0.3,
+                            "relevance_reference": 1.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Windriders - Diet and Habitat"]
+                        },
+                        {
+                            "id":"3000",
+                            "user_answer": "In my bedroom.",
+                            "rag_feedback_reference": "Wrong answer. You should review Windriders > Diet and Habitat.",
+                            "accuracy_reference": 0.0,
+                            "completeness_reference": 0.0,
+                            "relevance_reference": 0.0,
+                            "clarity_reference": 1.0,
+                            "sections_reference": ["Windriders - Diet and Habitat"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
